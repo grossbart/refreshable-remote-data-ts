@@ -1,0 +1,9 @@
+/*.log
+/.editorconfig
+/.gitignore
+/.idea
+/.prettierrc
+/node_modules
+/package-lock.json
+/src
+/tsconfig.json

@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "target": "es5",
+    "lib": ["es6", "dom"],
+    "outDir": "dist",
+    "declaration": true,
+    "strict": true,
+    "importHelpers": true,
+    "pretty": true,
+    "noUnusedLocals": true,
+    "noEmitOnError": true
+  },
+  "include": [
+    "./src/**/*"
+  ]
+}
