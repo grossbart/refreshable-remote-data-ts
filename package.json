@@ -1,6 +1,6 @@
 {
   "name": "refreshable-remote-data-ts",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "Peter Gassner",
   "license": "MPL-2.0",
   "main": "dist/index.js",
@@ -12,7 +12,7 @@
     "test": "npm run lint && npm run prettier && npm run jest",
     "jest": "jest",
     "lint": "eslint --ext ts --quiet --fix",
-    "lint-staged": "lint-staged",
+    "lint-staged": "npx lint-staged",
     "prettier": "prettier --list-different src/**/*.ts",
     "prepublishOnly": "npm run test && npm run build",
     "preversion": "if [ \"${npm_package_version#*-}\" = \"$npm_package_version\" ] ; then changelog-updater --check ; fi",
@@ -27,7 +27,7 @@
   },
   "peerDependencies": {
     "fp-ts": "^2.8.0",
-    "remote-data-ts": "^2.0.0"
+    "@devexperts/remote-data-ts": "^2.0.5"
   },
   "devDependencies": {
     "@devexperts/remote-data-ts": "^2.0.5",
